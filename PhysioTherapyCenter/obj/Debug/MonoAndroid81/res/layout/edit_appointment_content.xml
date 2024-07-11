@@ -1,0 +1,45 @@
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_main" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><ScrollView android:layout_width="match_parent" android:layout_height="match_parent"><LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"><EditText android:id="@+id/text_view_patient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Patient" android:theme="@style/SharedFormsEditText" android:textSize="25dp" android:layout_marginTop="20dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/baseline_person_black_24" /></android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"><EditText android:id="@+id/text_view_claim" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Select Claim" android:theme="@style/SharedFormsEditText" android:textSize="25dp" android:layout_marginTop="20dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/baseline_person_black_24" /></android.support.design.widget.TextInputLayout><!--	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp">
+
+			<ImageView
+					android:src="@drawable/baseline_person_black_24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/image_view_patients" />
+
+			<com.toptoche.searchablespinnerlibrary.SearchableSpinner
+					android:layout_width="fill_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/spinner_patients" />
+
+		</LinearLayout>
+
+
+
+    <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp">
+
+			<ImageView
+					android:src="@drawable/outline_edit_note_black_24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/image_view_claims" />
+
+			<com.toptoche.searchablespinnerlibrary.SearchableSpinner
+					android:layout_width="fill_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/spinner_claims" />
+
+		</LinearLayout>	
+
+--><EditText android:id="@+id/edit_text_appointment_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Appointment Date" android:inputType="textVisiblePassword" android:textSize="25dp" android:layout_marginTop="10dp" android:theme="@style/SharedFormsEditText" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/baseline_today_black_24" /><EditText android:id="@+id/edit_text_start_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Start Time" android:inputType="time" android:textSize="25dp" android:layout_marginTop="5dp" android:theme="@style/SharedFormsEditText" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/outline_schedule_black_24" /><EditText android:id="@+id/edit_text_end_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="End Time" android:inputType="time" android:textSize="25dp" android:layout_marginTop="5dp" android:theme="@style/SharedFormsEditText" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/outline_schedule_black_24" /><EditText android:id="@+id/edit_text_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Amount" android:inputType="date" android:textSize="25dp" android:layout_marginTop="5dp" android:theme="@style/SharedFormsEditText" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/outline_paid_black_24" /><EditText android:id="@+id/edit_text_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Note" android:inputType="date" android:textSize="25dp" android:layout_marginTop="5dp" android:theme="@style/SharedFormsEditText" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/outline_edit_note_black_24" /><LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"><ImageView android:layout_marginTop="20dp" android:src="@drawable/baseline_thumb_up_off_alt_black_24" android:layout_width="wrap_content" android:layout_height="match_parent" android:id="@+id/image_view_confirmed" /><RadioGroup android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/radioGroup1"><RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:textSize="25dp" android:text="Yes" android:id="@+id/radio_button_yes" /><RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:textSize="25dp" android:id="@+id/radio_button_no" /></RadioGroup></LinearLayout><Button android:text="Save" android:layout_width="fill_parent" android:layout_height="42dp" android:textStyle="bold" android:textSize="20dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:background="@drawable/forms_submit_button" android:textColor="@color/Navy" android:id="@+id/button_save" /></LinearLayout></ScrollView></RelativeLayout>

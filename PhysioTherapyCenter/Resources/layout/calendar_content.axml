@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/app_bar_main">
+
+
+	<ScrollView
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent">
+
+
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<CalendarView
+				android:layout_width="fill_parent"
+				android:layout_height="300dp"
+				android:id="@+id/calendar_view" />
+
+		<!-- <View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/darkGrey" />-->
+			<ListView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:divider="@color/darkGrey"
+				android:dividerHeight="1px"
+				android:id="@+id/appointments_list_View" />
+
+	</LinearLayout>
+
+
+
+
+	</ScrollView>
+
+		
+</RelativeLayout>

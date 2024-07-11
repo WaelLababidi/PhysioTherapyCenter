@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/app_bar_main">
+
+
+	<ScrollView
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent">
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<EditText
+					android:id="@+id/edit_text_patient_name"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Name"
+					android:inputType="textVisiblePassword"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_person_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+				<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:id="@+id/textInputLayout1">
+				<EditText
+					android:id="@+id/edit_text_patient_arabic_name"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Arabic Name"
+					android:inputType="textVisiblePassword"
+					android:textSize="20dp"
+					android:layout_marginTop="10dp"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_person_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<EditText
+					android:id="@+id/edit_text_patient_phone_number_1"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="1st Phone"
+					android:inputType="number"
+					android:textSize="20dp"
+					android:layout_marginTop="5dp"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_call_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<EditText
+					android:id="@+id/edit_text_patient_phone_number_2"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="2nd Phone"
+					android:inputType="number"
+					android:textSize="20dp"
+					android:layout_marginTop="5dp"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_call_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+		
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<EditText
+					android:id="@+id/edit_text_patient_creation_date"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Creation Date"
+					android:inputType="date"
+					android:textSize="20dp"
+					android:layout_marginTop="5dp"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_today_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+				<EditText
+					android:id="@+id/edit_text_patient_dob"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Date of Birth"
+					android:inputType="date"
+					android:layout_marginTop="5dp"
+					android:theme="@style/SharedFormsEditText"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_today_black_24"/>
+			</android.support.design.widget.TextInputLayout>
+
+	
+		<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">		
+
+			<EditText
+					android:id="@+id/edit_text_guarantor"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Guarantor"
+					android:theme="@style/SharedFormsEditText"
+					android:textSize="25dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="15dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/baseline_support_agent_black_24"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp">
+			<ImageView
+					android:layout_marginTop="20dp"
+					android:src="@drawable/baseline_wc_black_24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/image_view_confirmed" />
+		<RadioGroup
+			
+				android:layout_marginTop="20dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/radioGroup1">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:checked="true"
+					android:textSize="25dp"
+					android:text="Male"
+					android:id="@+id/radio_button_male" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Female"
+					android:textSize="25dp"
+					android:id="@+id/radio_button_female" />
+
+			</RadioGroup>
+	
+		</LinearLayout>
+		
+			<Button
+				android:text="Save"
+				android:layout_width="fill_parent"
+				android:layout_height="42dp"
+				android:textStyle="bold"
+				android:textSize="20dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:background="@drawable/forms_submit_button"
+				android:textColor="@color/Navy"
+				android:id="@+id/button_save_patient" />
+		</LinearLayout>
+
+
+	</ScrollView>
+</RelativeLayout>

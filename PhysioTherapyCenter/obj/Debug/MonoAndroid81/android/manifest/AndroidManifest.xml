@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="PhysioTherapyCenter.PhysioTherapyCenter" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="27" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:allowBackup="true" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:icon="@mipmap/physiotherapy_center_app_logo" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.BaseActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.BaseDrawerActivity" />
+    <activity android:label="Calendar" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CalendarActivity" />
+    <activity android:label="Claims" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.ClaimsActivity" />
+    <activity android:label="Create Coop Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreateCoopClaimActivity" />
+    <activity android:label="Create Appointment" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreateAppointmentActivity" />
+    <activity android:label="Create GS Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreateGSClaimActivity" />
+    <activity android:label="Create IS Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreateISClaimActivity" />
+    <activity android:label="Create Patient" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreatePatientActivity" />
+    <activity android:label="Create Private Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreatePrivateClaimActivity" />
+    <activity android:label="DashboardActivity" android:name="md55956ca691c97c979e2621259dd362aa9.DashboardActivity" />
+    <activity android:label="Edit Appointment" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditAppointmentActivity" />
+    <activity android:label="Edit Coop Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditCoopClaimActivity" />
+    <activity android:label="Edit GS Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditGSClaimActivity" />
+    <activity android:label="Edit IS Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditISClaimActivity" />
+    <activity android:label="Edit Nssf Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditNssfClaimActivity" />
+    <activity android:label="Edit Patient" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditPatientActivity" />
+    <activity android:label="Edit Private Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.EditPrivateClaimActivity" />
+    <activity android:label="@string/app_name" android:name="md55956ca691c97c979e2621259dd362aa9.LoginActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Dashboard" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.MainActivity" />
+    <activity android:label="Create Nssf Claim" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.CreateNssfClaimActivity" />
+    <activity android:label="Patients" android:theme="@style/AppTheme.NoActionBar" android:name="md55956ca691c97c979e2621259dd362aa9.PatientsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PhysioTherapyCenter.PhysioTherapyCenter.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.PhysioTherapyCenter.PhysioTherapyCenter" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

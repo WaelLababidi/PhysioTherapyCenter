@@ -1,0 +1,23 @@
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100" android:background="@color/white" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><!--<TextView
+				android:text="Login Into Your Account"
+				android:layout_width="match_parent"
+				android:layout_marginTop="30dp"
+				android:layout_height="0dp"
+				android:layout_weight="15"
+				android:textColor="@color/Navy"
+	     		android:gravity="center"
+				android:textStyle="bold"
+				android:textSize="25dp"
+				android:id="@+id/textView123" />
+
+			<TextView
+				android:text="@string/app_name"
+				android:layout_width="match_parent"
+				android:layout_marginTop="50dp"
+				android:layout_height="0dp"
+				android:layout_weight="20"
+				android:textColor="@color/Navy"
+	     		android:gravity="center"
+				android:textStyle="bold"
+				android:textSize="25dp"
+				android:id="@+id/textView123" />--><ImageView android:src="@mipmap/physiotherapy_center_logo" android:layout_width="match_parent" android:layout_marginTop="0dp" android:layout_height="135dp" android:layout_weight="20" android:gravity="center" android:layout_marginBottom="10dp" android:id="@+id/imageView123" /><EditText android:id="@+id/txtEmail" android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20" android:textColor="@color/Navy" android:hint="Email" android:inputType="textEmailAddress" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:textSize="20dp" android:theme="@style/EditTextNavy" android:drawablePadding="10dp" android:drawableLeft="@drawable/email_32" /><EditText android:id="@+id/txtPassword" android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20" android:textColor="@color/Navy" android:hint="Password" android:inputType="textPassword" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:textSize="18dp" android:theme="@style/EditTextNavy" android:drawablePadding="10dp" android:drawableLeft="@drawable/password_32" /><Button android:text="Login" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="15" android:textStyle="bold" android:textSize="15dp" android:layout_marginTop="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/forms_submit_button" android:textColor="@color/Navy" android:id="@+id/login_btn" /><TextView android:text="Forget Your Password ?" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10" android:textColor="@color/Navy" android:gravity="center" android:textStyle="bold" android:textSize="15dp" android:layout_marginTop="10dp" android:id="@+id/forget_password_textView" /></LinearLayout><android.support.v4.widget.ContentLoadingProgressBar android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/contentLoadingProgressBar1" /></LinearLayout>

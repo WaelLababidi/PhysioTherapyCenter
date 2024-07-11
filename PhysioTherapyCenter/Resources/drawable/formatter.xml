@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/app_bar_main">
+
+
+	<ScrollView
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent">
+
+
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<android.support.design.widget.TextInputLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content">
+
+
+				<EditText
+				android:id="@+id/edit_text_patient_name"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="Name"
+				android:inputType="textVisiblePassword"
+				android:textSize="20dp"
+				android:layout_marginTop="5dp"
+				android:theme="@style/EditTextNavy"/>
+			</android.support.design.widget.TextInputLayout>
+
+
+			<EditText
+				android:id="@+id/edit_text_patient_arabic_name"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="Arabic Name"
+				android:inputType="textVisiblePassword"
+				android:textSize="20dp"
+				android:layout_marginTop="10dp"
+				android:theme="@style/EditTextNavy"/>
+
+
+			<EditText
+				android:id="@+id/edit_text_patient_phone_number_1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="1st Phone"
+				android:inputType="number"
+				android:textSize="20dp"
+				android:layout_marginTop="5dp"
+				android:theme="@style/EditTextNavy"/>
+
+			<EditText
+				android:id="@+id/edit_text_patient_phone_number_2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="2nd Phone"
+				android:inputType="number"
+				android:textSize="20dp"
+				android:layout_marginTop="5dp"
+				android:theme="@style/EditTextNavy"/>
+
+
+			<EditText
+				android:id="@+id/edit_text_patient_creation_date"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="Creation Date"
+				android:inputType="date"
+				android:textSize="20dp"
+				android:layout_marginTop="5dp"
+				android:theme="@style/EditTextNavy"/>
+
+			<EditText
+				android:id="@+id/edit_text_patient_dob"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/Navy"
+				android:hint="Date of Birth"
+				android:inputType="date"
+				android:textSize="20dp"
+				android:layout_marginTop="5dp"
+				android:theme="@style/EditTextNavy"/>
+
+
+			<!--	<Spinner
+				 android:id="@+id/spinner_patient_gender"
+			 style="@style/MySpinnerStyle"/>
+
+
+			<Spinner
+				 android:id="@+id/spinner_patient_guarantor_instituation"
+				 style="@style/MySpinnerStyle" /> -->
+
+			<fr.ganfra.materialspinner.MaterialSpinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/spinner_patient_gender"
+				app:ms_floatingLabelColor="#A9A9A9"
+			    app:ms_floatingLabelText="Gender"
+			    app:ms_hint="Please Choose"
+			    app:ms_hintColor="#000000"/>
+
+
+			<!--<fr.ganfra.materialspinner.MaterialSpinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/spinner_patient_gender"
+				app:ms_floatingLabelColor="#A9A9A9"
+			    app:ms_floatingLabelText="Gender"
+			    app:ms_hint="Please Choose"
+			    app:ms_hintColor="#000000"/>-->
+
+
+			<fr.ganfra.materialspinner.MaterialSpinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/spinner_patient_guarantor_instituation"/>
+
+
+			<Button
+				android:text="Create"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="20dp"
+				android:layout_marginTop="30dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:background="@drawable/Button_Border"
+				android:textColor="@color/Navy"
+				android:id="@+id/login_btn" />
+
+
+		</LinearLayout>
+
+
+	</ScrollView>
+</RelativeLayout>

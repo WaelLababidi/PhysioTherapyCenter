@@ -1,0 +1,22 @@
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_main" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"><!--<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp">
+
+			<ImageView
+					android:src="@drawable/baseline_support_agent_black_24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/image_view_patient_guarantor_instituation" />
+
+
+			<fr.ganfra.materialspinner.MaterialSpinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/spinner_patient_guarantor_instituation"/>
+		</LinearLayout>--><TextView android:id="@+id/text_view_patient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Select Patient" android:theme="@style/SharedFormsTextView" android:textSize="25dp" android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:drawablePadding="10dp" android:drawableLeft="@drawable/baseline_person_black_24" /><!-- <View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/darkGrey" />--><ListView android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/darkGrey" android:dividerHeight="1px" android:id="@+id/claims_list_View" /></LinearLayout></RelativeLayout>

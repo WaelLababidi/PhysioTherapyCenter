@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/app_bar_main">
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<EditText
+		android:id="@+id/search_view_patients"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/Navy"
+		android:hint="Search"
+		android:inputType="textVisiblePassword"
+		android:textSize="25dp"
+		android:theme="@style/EditTextNavy"
+		android:drawablePadding="10dp"
+		android:drawableLeft="@drawable/baseline_person_search_black_36"/>
+
+
+
+		<ListView
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:divider="@color/darkGrey"
+			android:dividerHeight="1px"
+			android:id="@+id/patients_list_View" />
+	</LinearLayout>
+	
+
+</RelativeLayout>

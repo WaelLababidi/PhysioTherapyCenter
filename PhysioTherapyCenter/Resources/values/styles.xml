@@ -1,0 +1,96 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+	<!--Loing & Registration-->
+	<style name="AppTheme.login" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+	</style>
+
+	<!--White Textbox-->
+	<style name="EditTextNavy" parent="AppTheme.login">
+		<item name="colorControlNormal">@color/Navy</item>
+		<item name="colorControlActivated">@color/Navy</item>
+		<item name="colorControlHighlight">@color/Navy</item>
+		<!--<item name="android:textColorHint">@color/white</item>-->
+		<item name="android:textColor">@color/Navy</item>
+	</style>
+
+
+	<!--White Textbox-->
+	<style name="loginStyle" parent="AppTheme.login">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+	</style>
+
+
+
+	<style name="MySpinnerStyle" parent="android:Widget.Spinner">
+		<item name="android:spinnerMode">dialog</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="android:paddingTop">8dp</item>
+		<item name="android:paddingBottom">8dp</item>
+		<item name="android:paddingStart">8dp</item>
+		<item name="android:paddingEnd">8dp</item>
+		<!--<item name="android:background">@color/white</item>-->
+		<item name="android:textColor">@color/Navy</item>
+		<item name="android:textSize">20dp</item>
+
+		<!--<item name="android:prompt">@string/project_prompt</item>-->
+	</style>
+
+
+	<!--Forms Shared EditText-->
+	<style name="SharedFormsEditText" parent="android:style/Widget.EditText">
+
+
+		<item name="android:background">@color/white</item>
+		<item name="android:paddingTop">10dp</item>
+		<item name="android:paddingBottom">10dp</item>
+		<item name="colorControlNormal">@color/Navy</item>
+		<item name="colorControlActivated">@color/Navy</item>
+		<item name="colorControlHighlight">@color/Navy</item>
+		<item name="android:textColor">@color/Navy</item>
+		<item name="android:textSize">18dp</item>
+	</style>
+
+	<style name="SharedFormsTextView" parent="android:style/Widget.TextView">
+
+
+		<item name="android:paddingTop">10dp</item>
+		<item name="android:paddingBottom">10dp</item>
+		<item name="colorControlNormal">@color/Navy</item>
+		<item name="colorControlActivated">@color/Navy</item>
+		<item name="colorControlHighlight">@color/Navy</item>
+		<item name="android:textColor">@color/Navy</item>
+		<item name="android:textSize">18dp</item>
+
+
+	</style>
+
+	<!--White Textbox-->
+	<style name="dialog" parent="Theme.AppCompat.Dialog.Alert">
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:textColor">@color/darkGrey</item>
+	</style>
+</resources>
